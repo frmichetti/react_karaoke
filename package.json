@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "reactstrap": "^7.1.0"
+    "bootstrap": "^4.3.1"
   }
 }
