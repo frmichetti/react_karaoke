@@ -55,7 +55,7 @@ export default class ShopItems extends Component {
       <div className={'container-fluid'}>
         <div className={'row'}>
           <div className={'col-md-12'}>
-            <GroupButton/>
+            <GroupButton />
           </div>
           <div className={'margin-bottom-5'}>
             <div className={'col-md-12'}>
@@ -66,7 +66,7 @@ export default class ShopItems extends Component {
 
         {this.state.isCardView ? <CardList items={this.state.items}/> : <ItemList items={this.state.items}/>}
 
-        <Pagination/>
+        <Pagination />
 
       </div>
     )
