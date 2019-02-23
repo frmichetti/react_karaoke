@@ -16,7 +16,7 @@ ReactDOM.render(
 
       <HeadTitle/>
 
-      <ShopItems isCardView={false} />
+      <ShopItems isCardView={true} />
 
       <Footer/>
 
