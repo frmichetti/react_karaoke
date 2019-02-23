@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import Axios from 'axios';
+
 import Pagination from "./pagination";
 import GroupButton from './group-button';
 import CardList from './card-list';
@@ -43,6 +45,16 @@ export default class ShopItems extends Component {
         image: './images/reload.jpg'
       },
     ]
+  }
+
+  componentDidMount() {
+    const baseUrl = 'http://localhost:3000';
+    Axios.get(`${baseUrl}/albums`).then(function (response) {
+      console.log(response);
+    })
+      .catch(function (error) {
+        console.log(error);
+      })
   }
 
   handleViewChange(isCardView) {
