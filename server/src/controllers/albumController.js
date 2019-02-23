@@ -1,3 +1,5 @@
+const _ = require('lodash');
+
 const albums = [
   {
     text: 'And Justice For All',
@@ -37,6 +39,15 @@ exports.get = (req, res, next) => {
 
   res.status(200).send({albums: albums});
 };
+
+exports.search = (req, res, next) => {
+  const filteredAlbums = _.filter(albums, a => a.text.toLowerCase() === req.query.name.toLowerCase());
+
+  console.log(req.query.name)
+
+  res.status(200).send({albums: filteredAlbums});
+};
+
 
 
 exports.getById = (req, res, next) => {

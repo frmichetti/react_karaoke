@@ -5,12 +5,14 @@ import Pagination from "./pagination";
 import GroupButton from './group-button';
 import CardList from './card-list';
 import ItemList from './item-list';
+import DetailsModal from "./details-modal";
 
 export default class ShopItems extends Component {
   constructor(props) {
     super(props);
-    this.state = {isCardView: props.isCardView};
+    this.state = {isCardView: props.isCardView, items: []};
     this.handleViewChange = this.handleViewChange.bind(this);
+
     this.state.items = [
       {
         text: 'And Justice For All',
@@ -49,12 +51,10 @@ export default class ShopItems extends Component {
 
   componentDidMount() {
     const baseUrl = 'http://localhost:3000';
-    Axios.get(`${baseUrl}/albums`).then(function (response) {
-      console.log(response);
-    })
-      .catch(function (error) {
-        console.log(error);
-      })
+    Axios.get(`${baseUrl}/albums`).then(response => {
+      console.log("RESPONSE", response.data);
+      this.setState({items: response.data.albums});
+    }).catch(error => console.error(error));
   }
 
   handleViewChange(isCardView) {
@@ -79,6 +79,8 @@ export default class ShopItems extends Component {
         {this.state.isCardView ? <CardList items={this.state.items}/> : <ItemList items={this.state.items}/>}
 
         <Pagination />
+
+        <DetailsModal text={'Todo Get SElected ITEM'} image={''}/>
 
       </div>
     )
