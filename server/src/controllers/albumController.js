@@ -42,9 +42,6 @@ exports.get = (req, res, next) => {
 
 exports.search = (req, res, next) => {
   const filteredAlbums = _.filter(albums, a => a.text.toLowerCase() === req.query.name.toLowerCase());
-
-  console.log(req.query.name)
-
   res.status(200).send({albums: filteredAlbums});
 };
 

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Axios from "axios";
 
 export default class SearchField extends Component{
   constructor(props){
@@ -13,9 +14,10 @@ export default class SearchField extends Component{
   }
 
   handleSubmit(event) {
-    console.log('State Query Value', this.state.value);
-    console.log(event);
-    console.log('TODO - Call THE API');
+    const baseUrl = 'http://localhost:3000';
+    Axios.get(`${baseUrl}/albums/search`, {params: {name: this.state.value}}).then(response => {
+      console.log("RESPONSE", response.data);
+    }).catch(error => console.error(error));
   }
 
   render() {
