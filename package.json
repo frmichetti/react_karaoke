@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "webpack-dev-server --progress --colors --inline --hot",
     "api-dev": "nodemon ./server/bin/server.js"
   },
@@ -17,6 +17,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.22.0",
+    "jest": "^24.1.0",
     "nodemon": "^1.18.10",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
