@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import Navigation from "./components/navigation";
 import Jumbotron from "./components/jumbotron";
@@ -7,19 +6,18 @@ import Footer from "./components/footer";
 import HeadTitle from "./components/head-title";
 import ShopItems from "./components/shop-items";
 
-ReactDOM.render(
-    <div id={'main'}>
+export default props => (
+  <div id={'home'}>
 
-      <Navigation />
+    <Navigation/>
 
-      <Jumbotron/>
+    <Jumbotron/>
 
-      <HeadTitle/>
+    <HeadTitle/>
 
-      <ShopItems isCardView={true} />
+    <ShopItems isCardView={true}/>
 
-      <Footer/>
+    <Footer/>
 
-    </div>
-,
-document.getElementById('root'));
+  </div>
+)
