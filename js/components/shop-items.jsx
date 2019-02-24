@@ -5,14 +5,13 @@ import Pagination from "./pagination";
 import GroupButton from './group-button';
 import CardList from './card-list';
 import ItemList from './item-list';
+import Row from './row';
 import DetailsModal from "./details-modal";
 
 export default class ShopItems extends Component {
   constructor(props) {
     super(props);
-    this.state = {isCardView: props.isCardView, items: []};
-    this.handleViewChange = this.handleViewChange.bind(this);
-
+    this.state = {isCardView: props.isCardView};
     this.state.items = [
       {
         text: 'And Justice For All',
@@ -46,14 +45,15 @@ export default class ShopItems extends Component {
         text: 'Reload',
         image: './images/reload.jpg'
       },
-    ]
+    ];
+    this.handleViewChange = this.handleViewChange.bind(this);
   }
 
   componentDidMount() {
     const baseUrl = 'http://localhost:3000';
     Axios.get(`${baseUrl}/albums`).then(response => {
       console.log("RESPONSE", response.data);
-      this.setState({items: response.data.albums});
+      this.setState({...this.state, isCardView: true, items: response.data.albums});
     }).catch(error => console.error(error));
   }
 
@@ -65,16 +65,14 @@ export default class ShopItems extends Component {
   render() {
     return (
       <div className={'container-fluid'}>
-        <div className={'row'}>
+        <Row>
           <div className={'col-md-12'}>
             <GroupButton />
           </div>
-          <div className={'margin-bottom-5'}>
             <div className={'col-md-12'}>
               <br/>
             </div>
-          </div>
-        </div>
+        </Row>
 
         {this.state.isCardView ? <CardList items={this.state.items}/> : <ItemList items={this.state.items}/>}
 

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Item from "./item";
+import Row from './row';
 
 export default class ItemList extends Component {
   constructor(props){
@@ -11,9 +12,9 @@ export default class ItemList extends Component {
       <div>
       {
         this.state.items.map((item, idx) => (
-          <div className={'row'} key={idx}>
+          <Row key={idx}>
             <Item text={item.text} image={item.image} />
-          </div>
+          </Row>
         ))
       }
       </div>

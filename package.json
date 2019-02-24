@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "dev": "webpack-dev-server --progress --colors --inline --hot",
-    "api-dev": "nodemon ./server/bin/server.js"
+    "api-dev-win": "set DEBUG=express:* & nodemon ./server/bin/server.js",
+    "api-dev-linux": "DEBUG=express:* nodemon ./server/bin/server.js"
   },
   "keywords": [],
   "author": "",
