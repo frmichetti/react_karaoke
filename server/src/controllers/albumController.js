@@ -1,55 +1,6 @@
 const _ = require('lodash');
-const BASE_URL = "http://localhost:3000/static/";
 
-const albums = [
-  {
-    id: 1,
-    text: 'And Justice For All',
-    image: BASE_URL + 'andjusticeforall.jpg',
-    details: {
-      "large-image": 'andjusticeforall-large.jpg',
-      tracks: [
-        {id: 1, title: "Blackened", duration: 38460, composers: 'James Hetfield, Lars Ulrich, Jason Newsted'},
-        {id: 2, title: "…And Justice for All" , duration: 56820, composers: "Hetfield, Ulrich, Kirk Hammett"},
-      ]
-    }
-  },
-  {
-    id: 2,
-    text: 'Black Album',
-    image: BASE_URL + 'blackalbum.jpg'
-  },
-  {
-    id: 3,
-    text: 'Death Magnetic',
-    image: BASE_URL + 'deathmagnetic.jpg'
-  },
-  {
-    id: 4,
-    text: 'Load',
-    image: BASE_URL + 'load.jpg'
-  },
-  {
-    id: 5,
-    text: 'Saint Anger Album',
-    image: BASE_URL + 'stanger.jpg'
-  },
-  {
-    id: 6,
-    text: 'Hardwired To Self Destruct',
-    image: BASE_URL + 'hardwiredtoselfdestruct.jpg'
-  },
-  {
-    id: 7,
-    text: 'Kill em All Album',
-    image: BASE_URL + 'killemall.jpg'
-  },
-  {
-    id: 8,
-    text: 'Reload',
-    image: BASE_URL + 'reload.jpg'
-  },
-];
+const {albums} = require('../public/files/metallica-albums');
 
 exports.get = (req, res, next) => {
 
