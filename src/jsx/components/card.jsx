@@ -8,7 +8,6 @@ export default class Card extends Component {
   }
 
   handleModal(id) {
-    console.log('handleModal', id)
     this.props.click(id);
     $('#DetailsModal').modal('toggle')
   }
@@ -22,8 +21,7 @@ export default class Card extends Component {
               <p className="card-text">{this.props.text}</p>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="btn-group">
-                  <button type="button" className="btn btn-sm btn-outline-secondary" onClick={() => this.handleModal(this.props.id)}>Details
-                  </button>
+                  {this.props.details ? (<button type="button" className="btn btn-sm btn-outline-secondary" onClick={() => this.handleModal(this.props.id)}>Details</button>) : null}
                   <button type="button" className="btn btn-sm btn-outline-secondary">Buy</button>
                 </div>
                 <small className="text-muted">9 mins</small>

@@ -13,17 +13,31 @@ import Grid from "./grid";
 export default class ShopItems extends Component {
   constructor(props) {
     super(props);
-    this.state = {isCardView: props.isCardView, selectedItem: {}};
+    this.state = {isCardView: props.isCardView, selectedItem: {details: {tracks: [],  "large-images": []}}};
     this.state.items = [
       {
         id: 1,
         text: 'And Justice For All',
-        image: 'http://localhost:3000/static/andjusticeforall.jpg'
+        image: 'http://localhost:3000/static/andjusticeforall.jpg',
+        details: {
+          "large-images": ['http://localhost:3000/static/andjusticeforall-large.jpg', 'http://localhost:3000/static/andjusticeforall-large.jpg', 'http://localhost:3000/static/andjusticeforall-large.jpg'],
+          tracks: [
+            {id: 1, title: "Blackened", duration: 38460, composers: 'James Hetfield, Lars Ulrich, Jason Newsted'},
+            {id: 2, title: "…And Justice for All" , duration: 56820, composers: "Hetfield, Ulrich, Kirk Hammett"},
+          ]
+        }
       },
       {
         id: 2,
         text: 'Black Album',
-        image: 'http://localhost:3000/static/blackalbum.jpg'
+        image: 'http://localhost:3000/static/blackalbum.jpg',
+        details: {
+          "large-image": ['http://localhost:3000/static/black-album-large.jpg', 'http://localhost:3000/static/black-album-large.jpg', 'http://localhost:3000/static/black-album-large.jpg'],
+          tracks: [
+            {id: 1, title: "Enter Sandman", duration: 32040, composers: 'Kirk HammettLars UlrichHetfield'},
+            {id: 2, title: "Sad but True" , duration: 31440, composers: 'Ulrich Hetfield'},
+          ]
+        }
       },
       {
         id: 3,
@@ -65,7 +79,7 @@ export default class ShopItems extends Component {
     const baseUrl = 'http://localhost:3000';
     Axios.get(`${baseUrl}/albums`).then(response => {
       console.log("RESPONSE", response.data);
-      this.setState({...this.state, items: response.data.albums});
+      // this.setState({...this.state, items: response.data.albums});
     }).catch(error => console.error(error));
   }
 
