@@ -69,9 +69,6 @@ export default class ShopItems extends Component {
           <div className={'col-md-12'}>
             <GroupButton />
           </div>
-            <div className={'col-md-12'}>
-              <br/>
-            </div>
         </Row>
 
         {this.state.isCardView ? <CardList items={this.state.items}/> : <ItemList items={this.state.items}/>}
