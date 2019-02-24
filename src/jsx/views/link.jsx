@@ -3,7 +3,7 @@ import Navigation from "../components/navigation";
 import Footer from "../components/footer";
 
 export default props => (
-  <div id={'home'}>
+  <div id={'link'}>
 
     <Navigation/>
 

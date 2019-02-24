@@ -9,7 +9,7 @@ export default class LyricPlayer extends Component {
       var _data;
       var currentLine = "";
 
-      var promise = fetch('http://localhost:3000/lyrics/enter-sandman.lyric.json')
+      var promise = fetch('http://localhost:3000/lyrics/enter-sandman.lyric.json');
       promise.then(function(response){
         response.json().then(function (data) {
           _data = data;
