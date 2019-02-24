@@ -3,12 +3,12 @@
     {
       "id": 1,
       "text": "And Justice For All",
-      "image": "http://localhost:3000/static/andjusticeforall.jpg",
+      "image": "http://localhost:3000/images/andjusticeforall.jpg",
       "details": {
         "large-images": [
-          "http://localhost:3000/static/andjusticeforall-large.jpg",
-          "http://localhost:3000/static/andjusticeforall-large.jpg",
-          "http://localhost:3000/static/andjusticeforall-large.jpg"
+          "http://localhost:3000/images/andjusticeforall-large.jpg",
+          "http://localhost:3000/images/andjusticeforall-large.jpg",
+          "http://localhost:3000/images/andjusticeforall-large.jpg"
         ],
         "tracks": [
           {
@@ -29,12 +29,12 @@
     {
       "id": 2,
       "text": "Black Album",
-      "image": "http://localhost:3000/static/blackalbum.jpg",
+      "image": "http://localhost:3000/images/blackalbum.jpg",
       "details": {
         "large-images": [
-          "http://localhost:3000/static/black-album-large.jpg",
-          "http://localhost:3000/static/black-album-large.jpg",
-          "http://localhost:3000/static/black-album-large.jpg"
+          "http://localhost:3000/images/black-album-large.jpg",
+          "http://localhost:3000/images/black-album-large.jpg",
+          "http://localhost:3000/images/black-album-large.jpg"
         ],
         "tracks": [
           {
@@ -55,32 +55,32 @@
     {
       "id": 3,
       "text": "Death Magnetic",
-      "image": "http://localhost:3000/static/deathmagnetic.jpg"
+      "image": "http://localhost:3000/images/deathmagnetic.jpg"
     },
     {
       "id": 4,
       "text": "Load",
-      "image": "http://localhost:3000/static/load.jpg"
+      "image": "http://localhost:3000/images/load.jpg"
     },
     {
       "id": 5,
       "text": "Saint Anger Album",
-      "image": "http://localhost:3000/static/stanger.jpg"
+      "image": "http://localhost:3000/images/stanger.jpg"
     },
     {
       "id": 6,
       "text": "Hardwired To Self Destruct",
-      "image": "http://localhost:3000/static/hardwiredtoselfdestruct.jpg"
+      "image": "http://localhost:3000/images/hardwiredtoselfdestruct.jpg"
     },
     {
       "id": 7,
       "text": "Kill em All Album",
-      "image": "http://localhost:3000/static/killemall.jpg"
+      "image": "http://localhost:3000/images/killemall.jpg"
     },
     {
       "id": 8,
       "text": "Reload",
-      "image": "http://localhost:3000/static/reload.jpg"
+      "image": "http://localhost:3000/images/reload.jpg"
     }
   ]
 }

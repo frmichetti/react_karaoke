@@ -10,7 +10,9 @@ const albumRoute = require('./routes/albumRoute');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/static', express.static(__dirname + '/public/images'));
+app.use('/images', express.static(__dirname + '/public/images'));
+app.use('/lyrics', express.static(__dirname + '/public/lyrics'));
+app.use('/musics', express.static(__dirname + '/public/musics'));
 app.use('/', index);
 app.use('/albums', albumRoute);
 
