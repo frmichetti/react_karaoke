@@ -7,6 +7,7 @@ import CardList from './card-list';
 import ItemList from './item-list';
 import Row from './row';
 import DetailsModal from "./details-modal";
+import Grid from "./grid";
 
 export default class ShopItems extends Component {
   constructor(props) {
@@ -46,7 +47,8 @@ export default class ShopItems extends Component {
         image: './images/reload.jpg'
       },
     ];
-    this.handleViewChange = this.handleViewChange.bind(this);
+    this.showCards = this.showCards.bind(this);
+    this.showRows = this.showRows.bind(this);
   }
 
   componentDidMount() {
@@ -57,18 +59,21 @@ export default class ShopItems extends Component {
     }).catch(error => console.error(error));
   }
 
-  handleViewChange(isCardView) {
-    console.log('HANDLE VIEW CHANGE', isCardView);
-    this.setState({isCardView: isCardView})
+  showCards() {
+    this.setState({isCardView: true})
+  }
+
+  showRows(){
+    this.setState({isCardView: false})
   }
 
   render() {
     return (
       <div className={'container-fluid'}>
         <Row>
-          <div className={'col-md-12'}>
-            <GroupButton />
-          </div>
+          <Grid columns={'12 12 12 12'}>
+            <GroupButton showCards={this.showCards} showRows={this.showRows}/>
+          </Grid>
         </Row>
 
         {this.state.isCardView ? <CardList items={this.state.items}/> : <ItemList items={this.state.items}/>}
