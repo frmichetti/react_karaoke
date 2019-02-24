@@ -4,42 +4,42 @@ const albums = [
   {
     id: 1,
     text: 'And Justice For All',
-    image: './images/andjusticeforall.jpg'
+    image: 'http://localhost:3000/static/andjusticeforall.jpg'
   },
   {
     id: 2,
     text: 'Black Album',
-    image: './images/blackalbum.jpg'
+    image: 'http://localhost:3000/static/blackalbum.jpg'
   },
   {
     id: 3,
     text: 'Death Magnetic',
-    image: './images/deathmagnetic.jpg'
+    image: 'http://localhost:3000/static/deathmagnetic.jpg'
   },
   {
     id: 4,
     text: 'Load',
-    image: './images/load.jpg'
+    image: 'http://localhost:3000/static/load.jpg'
   },
   {
     id: 5,
     text: 'Saint Anger Album',
-    image: './images/stanger.jpg'
+    image: 'http://localhost:3000/static/stanger.jpg'
   },
   {
     id: 6,
     text: 'Hardwired To Self Destruct',
-    image: './images/hardwiredtoselfdestruct.jpg'
+    image: 'http://localhost:3000/static/hardwiredtoselfdestruct.jpg'
   },
   {
     id: 7,
     text: 'Kill em All Album',
-    image: './images/killemall.jpg'
+    image: 'http://localhost:3000/static/killemall.jpg'
   },
   {
     id: 8,
     text: 'Reload',
-    image: './images/reload.jpg'
+    image: 'http://localhost:3000/static/reload.jpg'
   },
 ];
 
