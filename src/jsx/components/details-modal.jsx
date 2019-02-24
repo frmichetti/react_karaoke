@@ -1,5 +1,18 @@
 import React from 'react';
 
+const msToTime = duration => {
+  let milliseconds = parseInt((duration%1000)/100)
+    , seconds = parseInt((duration/1000)%60)
+    , minutes = parseInt((duration/(1000*60))%60)
+    , hours = parseInt((duration/(1000*60*60))%24);
+
+  hours = (hours < 10) ? "0" + hours : hours;
+  minutes = (minutes < 10) ? "0" + minutes : minutes;
+  seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+  return minutes + ":" + seconds;
+};
+
 export default props => (
   <div className={"modal fade"} id="DetailsModal" tabIndex="-1" role="dialog"
        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -48,7 +61,7 @@ export default props => (
               <tr key={idx}>
                 <th scope="row">{t.id}</th>
                 <td>{t.title}</td>
-                <td>{(t.duration / 60).toString()}</td>
+                <td>{msToTime(t.duration)}</td>
                 <td>{t.composers}</td>
               </tr>
             ))}

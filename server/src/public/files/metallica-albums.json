@@ -14,14 +14,56 @@
           {
             "id": 1,
             "title": "Blackened",
-            "duration": 38460,
+            "duration": 401000,
             "composers": "James Hetfield, Lars Ulrich, Jason Newsted"
           },
           {
             "id": 2,
             "title": "…And Justice for All",
-            "duration": 56820,
+            "duration": 587000,
             "composers": "Hetfield, Ulrich, Kirk Hammett"
+          },
+          {
+            "id": 3,
+            "title": "Eye of the Beholder"  ,
+            "duration": 390000,
+            "composers": "Hetfield, Ulrich, Hammett"
+          },
+          {
+            "id": 4,
+            "title": "One",
+            "duration": 444000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 5,
+            "title": "The Shortest Straw",
+            "duration": 396000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 6,
+            "title": "Harvester of Sorrow",
+            "duration": 346000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 7,
+            "title": "The Frayed Ends of Sanity",
+            "duration": 464000,
+            "composers": "Hetfield, Ulrich, Hammett"
+          },
+          {
+            "id": 8,
+            "title": "'To Live Is to Die' (instrumental)",
+            "duration": 589000,
+            "composers": "Hetfield, Ulrich, Cliff Burton"
+          },
+          {
+            "id": 9,
+            "title": "Dyers Eve",
+            "duration": 313000,
+            "composers": "Hetfield, Ulrich, Hammett"
           }
         ]
       }
@@ -40,14 +82,74 @@
           {
             "id": 1,
             "title": "Enter Sandman",
-            "duration": 32040,
-            "composers": "Kirk HammettLars UlrichHetfield"
+            "duration": 331000,
+            "composers": "Hetfield, Ulrich, Hammett"
           },
           {
             "id": 2,
             "title": "Sad but True",
-            "duration": 31440,
-            "composers": "Ulrich Hetfield"
+            "duration": 323000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 3,
+            "title": "Holier Than Thou",
+            "duration": 228000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 4,
+            "title": "The Unforgiven",
+            "duration": 387000,
+            "composers": "Hetfield, Ulrich, Hammett"
+          },
+          {
+            "id": 5,
+            "title": "Wherever I May Roam" ,
+            "duration": 406000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 6,
+            "title": "Don't Tread on Me",
+            "duration": 241000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 7,
+            "title": "Through the Never",
+            "duration": 243000,
+            "composers": "Hetfield, Ulrich, Hammett"
+          },
+          {
+            "id": 8,
+            "title": "Nothing Else Matters",
+            "duration": 389000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 9,
+            "title": "Of Wolf and Man",
+            "duration": 257000,
+            "composers": "Hetfield, Ulrich, Hammett"
+          },
+          {
+            "id": 10,
+            "title": "The God That Failed",
+            "duration": 305000,
+            "composers": "Hetfield, Ulrich"
+          },
+          {
+            "id": 11,
+            "title": "My Friend of Misery",
+            "duration": 410000,
+            "composers": "Newsted, Hetfield, Ulrich"
+          },
+          {
+            "id": 12,
+            "title": "The Struggle Within",
+            "duration": 234000,
+            "composers": "Hetfield, Ulrich"
           }
         ]
       }
