@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, Redirect, hashHistory} from 'react-router';
-import Home from './home';
-import Link from './link';
+import Home from './views/home';
+import Link from './views/link';
 
 export default props => (
   <Router history={hashHistory}>
