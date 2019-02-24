@@ -70,7 +70,7 @@
 }
 .pbody .player .left {
     width: 80px;
-    background-image: url(https://i.scdn.co/image/9ca53beeb365f468b023a8360634f309325b5487);
+    background-image: url(http://localhost:3000/images/blackalbum.jpg);
     background-size: cover;
 }
 .pbody .player .right {
