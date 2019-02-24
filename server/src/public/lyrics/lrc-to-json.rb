@@ -14,7 +14,7 @@ f.each_line do |line|
     time = line.scan(/\d+/)
     min = time[0].to_i 
     sec = time[1].to_i
-    mil = time[2].to_i > 5 ? 1 : 0
+    mil = time[2].to_i > 5 ? 2 : 1
 
     str =  line.scan(/[a-zA-Z]+/).join(' ')
     puts time
