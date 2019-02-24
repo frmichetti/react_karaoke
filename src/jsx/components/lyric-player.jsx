@@ -87,7 +87,7 @@ export default class LyricPlayer extends Component {
               <a className="artist">Metallica</a>
             </div>
             <div className="bottom">
-              <video controls={""} autoPlay={"true"} name={"media"}>
+              <video controls={true} autoPlay={true} name={"media"} loop={true}>
                 <source src="http://localhost:3000/musics/enter-sandman.mp3" type="audio/mpeg"></source>
               </video>
             </div>
