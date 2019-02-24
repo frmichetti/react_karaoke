@@ -21,6 +21,9 @@ export default class Navigation extends Component {
                           <a className="nav-link" href="./#/link">Link</a>
                       </li>
                       <li className="nav-item">
+                          <a className="nav-link" href="./#/player">Player</a>
+                      </li>
+                      <li className="nav-item">
                           <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
                       </li>
                       <li className="nav-item dropdown">

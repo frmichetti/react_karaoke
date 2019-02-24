@@ -22,7 +22,6 @@ export default class ShopItems extends Component {
   componentDidMount() {
     const baseUrl = 'http://localhost:3000';
     Axios.get(`${baseUrl}/albums`).then(response => {
-      console.log("RESPONSE", response.data);
       this.setState({...this.state, items: response.data.albums});
     }).catch(error => console.error(error));
   }
