@@ -69,7 +69,7 @@ export default class ShopItems extends Component {
 
   render() {
     return (
-      <div className={'container-fluid'}>
+      <div className={'container-fluid'} style={{marginBottom: '20px', marginTop: '20px'}}>
         <Row>
           <Grid columns={'12 12 12 12'}>
             <GroupButton showCards={this.showCards} showRows={this.showRows}/>
