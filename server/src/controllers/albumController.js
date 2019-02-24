@@ -2,34 +2,42 @@ const _ = require('lodash');
 
 const albums = [
   {
+    id: 1,
     text: 'And Justice For All',
     image: './images/andjusticeforall.jpg'
   },
   {
+    id: 2,
     text: 'Black Album',
     image: './images/blackalbum.jpg'
   },
   {
+    id: 3,
     text: 'Death Magnetic',
     image: './images/deathmagnetic.jpg'
   },
   {
+    id: 4,
     text: 'Load',
     image: './images/load.jpg'
   },
   {
+    id: 5,
     text: 'Saint Anger Album',
     image: './images/stanger.jpg'
   },
   {
+    id: 6,
     text: 'Hardwired To Self Destruct',
     image: './images/hardwiredtoselfdestruct.jpg'
   },
   {
+    id: 7,
     text: 'Kill em All Album',
     image: './images/killemall.jpg'
   },
   {
+    id: 8,
     text: 'Reload',
     image: './images/reload.jpg'
   },

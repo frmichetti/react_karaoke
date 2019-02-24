@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Pagination extends Component {
   render() {
     return (
-      <div className={'row'}>
+      <div className={'row'} style={{marginBottom: '20px', marginTop: '20px'}}>
         <div className={"col-md-12"}>
           <nav aria-label="Page navigation example">
             <ul className="pagination justify-content-center">

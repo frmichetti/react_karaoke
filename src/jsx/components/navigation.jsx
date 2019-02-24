@@ -5,7 +5,7 @@ export default class Navigation extends Component {
     render() {
         return (
           <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-              <a className="navbar-brand" href="#"><img src="./images/logo-svg-white.svg" alt="" width={'40px'} height={'40px'} style={{fill: '#ffffff'}}/>Metallica Store</a>
+              <a className="navbar-brand" href="#"><img src="./images/logo-svg-white.svg" alt="" width={'40px'} height={'40px'} style={{fill: '#ffffff'}} className={'image'}/>Metallica Store</a>
               <button className="navbar-toggler" type="button" data-toggle="collapse"
                       data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
                       aria-label="Toggle navigation">
