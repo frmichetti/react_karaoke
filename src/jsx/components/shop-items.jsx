@@ -32,7 +32,7 @@ export default class ShopItems extends Component {
         text: 'Black Album',
         image: 'http://localhost:3000/static/blackalbum.jpg',
         details: {
-          "large-image": ['http://localhost:3000/static/black-album-large.jpg', 'http://localhost:3000/static/black-album-large.jpg', 'http://localhost:3000/static/black-album-large.jpg'],
+          "large-images": ['http://localhost:3000/static/black-album-large.jpg', 'http://localhost:3000/static/black-album-large.jpg', 'http://localhost:3000/static/black-album-large.jpg'],
           tracks: [
             {id: 1, title: "Enter Sandman", duration: 32040, composers: 'Kirk HammettLars UlrichHetfield'},
             {id: 2, title: "Sad but True" , duration: 31440, composers: 'Ulrich Hetfield'},
@@ -92,8 +92,8 @@ export default class ShopItems extends Component {
   }
 
   changeSelectedItem(id) {
-    console.log('changeSelectedItem', id);
     const item = _.filter(this.state.items, {id})[0];
+    debugger
     this.setState({...this.state, selectedItem: item})
   }
 
