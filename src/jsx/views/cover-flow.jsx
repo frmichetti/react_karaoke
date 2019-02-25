@@ -11,9 +11,9 @@ export default props => (
 
     <Navigation/>
 
-    <Jumbotron/>
+    <Jumbotron title={'Cover Flow Example'} text={'This is a Cover Flow Example'} />
 
-    <HeadTitle/>
+    <HeadTitle />
 
     <CoverFlow />
 

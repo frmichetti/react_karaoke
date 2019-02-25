@@ -11,7 +11,7 @@ export default props => (
 
     <Navigation/>
 
-    <Jumbotron/>
+    <Jumbotron title={'Home Cards and List Example'} text={'This is a Cards and List Example'}/>
 
     <HeadTitle/>
 
