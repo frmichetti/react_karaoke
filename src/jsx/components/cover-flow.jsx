@@ -20,7 +20,7 @@ export default class CoverFlow extends Component {
         <div className="container">
           <div className="wgh-slider">
             {this.state.items.map((item, idx) => (
-              <input className="wgh-slider-target" type="radio" id={`slide-${idx + 1}`} name={"slider"} defaultChecked={idx === 0 ? "checked": ""}/>)
+              <input key={idx} className="wgh-slider-target" type="radio" id={`slide-${idx + 1}`} name={"slider"} defaultChecked={idx === 0 ? "checked": ""}/>)
             )}
 
             <div className="wgh-slider__viewport">
