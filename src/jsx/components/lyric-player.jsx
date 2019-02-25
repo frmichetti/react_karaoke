@@ -80,7 +80,7 @@ export default class LyricPlayer extends Component {
         </div>
 
         <div className="player">
-          <div className="left"></div>
+          <div className="left" style={{backgroundImage: 'http://localhost:3000/images/blackalbum.jpg'}}></div>
           <div className="right">
             <div className="top">
               <a className="song">Enter Sandman</a>

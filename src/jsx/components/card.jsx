@@ -5,11 +5,17 @@ export default class Card extends Component {
   constructor(props) {
     super(props);
     this.handleModal = this.handleModal.bind(this);
+    this.play = this.play.bind(this);
   }
 
   handleModal(id) {
     this.props.click(id);
     $('#DetailsModal').modal('toggle')
+  }
+
+  play(id) {
+    this.props.play(id);
+    const player = $('#player');
   }
 
   render() {
@@ -21,8 +27,8 @@ export default class Card extends Component {
               <p className="card-text">{this.props.text}</p>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="btn-group">
-                  {this.props.details ? (<button type="button" className="btn btn-sm btn-outline-secondary" onClick={() => this.handleModal(this.props.id)}>Details</button>) : null}
-                  <button type="button" className="btn btn-sm btn-outline-secondary">Buy</button>
+                  {this.props.details ? (<button type="button" className="btn btn-sm btn-outline-primary" onClick={() => this.handleModal(this.props.id)}>Details</button>) : null}
+                  {this.props.song ? <button type="button" className="btn btn-sm btn-outline-secondary" onClick={() => this.play(this.props.id)}>Play</button> : null}
                 </div>
                 <small className="text-muted">9 mins</small>
               </div>

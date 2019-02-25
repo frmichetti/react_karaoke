@@ -3,6 +3,11 @@
     {
       "id": 1,
       "text": "And Justice For All",
+      "artist": "Metallica",
+      "song": {
+        "name": "Blackened",
+        "url": "http://localhost:3000/musics/blackened.mp3"
+      },
       "image": "http://localhost:3000/images/andjusticeforall.jpg",
       "details": {
         "large-images": [
@@ -71,6 +76,11 @@
     {
       "id": 2,
       "text": "Black Album",
+      "artist": "Metallica",
+      "song": {
+        "name": "Enter Sandman",
+        "url": "http://localhost:3000/musics/enter-sandman.mp3"
+      },
       "image": "http://localhost:3000/images/blackalbum.jpg",
       "details": {
         "large-images": [
@@ -157,8 +167,17 @@
     {
       "id": 3,
       "text": "Death Magnetic",
-      "image": "http://localhost:3000/images/deathmagnetic.jpg"
-    },
+      "image": "http://localhost:3000/images/deathmagnetic.jpg",
+      "artist": "Metallica",
+      "song": {
+        "name": "That Was Just Your Life",
+        "url": "http://localhost:3000/musics/that-was-just-your-life.mp3"
+      },
+      "details": {
+        "large-images": [],
+        "tracks": []
+      }
+      },
     {
       "id": 4,
       "text": "Load",
@@ -167,7 +186,15 @@
     {
       "id": 5,
       "text": "Saint Anger Album",
-      "image": "http://localhost:3000/images/stanger.jpg"
+      "image": "http://localhost:3000/images/stanger.jpg",
+      "song": {
+        "name": "Frantic",
+        "url": "http://localhost:3000/musics/frantic.mp3"
+      },
+      "details": {
+        "large-images": [],
+        "tracks": []
+      }
     },
     {
       "id": 6,
