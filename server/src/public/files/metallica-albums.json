@@ -181,11 +181,13 @@
     {
       "id": 4,
       "text": "Load",
+      "artist": "Metallica",
       "image": "http://localhost:3000/images/load.jpg"
     },
     {
       "id": 5,
       "text": "Saint Anger Album",
+      "artist": "Metallica",
       "image": "http://localhost:3000/images/stanger.jpg",
       "song": {
         "name": "Frantic",
@@ -199,16 +201,19 @@
     {
       "id": 6,
       "text": "Hardwired To Self Destruct",
+      "artist": "Metallica",
       "image": "http://localhost:3000/images/hardwiredtoselfdestruct.jpg"
     },
     {
       "id": 7,
       "text": "Kill em All Album",
+      "artist": "Metallica",
       "image": "http://localhost:3000/images/killemall.jpg"
     },
     {
       "id": 8,
       "text": "Reload",
+      "artist": "Metallica",
       "image": "http://localhost:3000/images/reload.jpg"
     }
   ]
