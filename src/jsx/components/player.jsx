@@ -12,7 +12,7 @@ export default props => (
               <a className="artist">{props.item.artist}</a>
             </div>
             <div className="bottom">
-              <audio controls={true} autoPlay={true} name={"media"} loop={true} id={"#player"} src={props.item.song.url}></audio>
+              <audio controls={true} autoPlay={false} name={"media"} loop={true} id={"#player"} src={props.item.song.url}></audio>
             </div>
           </div>
         </div>
