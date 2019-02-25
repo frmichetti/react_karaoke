@@ -9,19 +9,19 @@
     overflow: hidden;
 }
 
-.cover-body .container .wgh-slider {
+.wgh-slider {
     position: relative;
     top: 50%;
     width: 100%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-.cover-body .container .wgh-slider .wgh-slider__viewport {
+.wgh-slider__viewport {
     position: relative;
     height: 100%;
     width: 100%;
 }
-.cover-body .container .wgh-slider .wgh-slider__viewport .wgh-slider__viewbox {
+.wgh-slider__viewbox {
     display: block;
     position: relative;
     -webkit-perspective: 100vw;
@@ -33,7 +33,7 @@
     transform-style: preserve-3d;
     z-index: 0;
 }
-.cover-body .container .wgh-slider .wgh-slider__viewport .wgh-slider__viewbox::before {
+.wgh-slider__viewbox::before {
     position: relative;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@
     padding-bottom: 100%;
     width: 100%;
 }
-.cover-body .container .wgh-slider .wgh-slider__viewport .wgh-slider__container {
+.wgh-slider__container {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,7 +55,7 @@
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-.cover-body .container .wgh-slider .wgh-slider__viewport .wgh-slider-target {
+.wgh-slider-target {
     position: absolute;
     width: 0;
     height: 0;

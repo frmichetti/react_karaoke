@@ -19,7 +19,7 @@ if (document.location.pathname.indexOf('fullcpgrid') > -1) {
   demoAnimation();
 }
 
-if (document.getElementsByClassName('wgh-slider-target')[0].nodeName.toLowerCase() !== 'input') {
+if (document.getElementsByClassName('wgh-slider-target').length > 0 && document.getElementsByClassName('wgh-slider-target')[0].nodeName.toLowerCase() !== 'input') {
   var resetBtn = document.createElement('button');
   resetBtn.type = 'button';
   resetBtn.textContent = 'Reset Hash URL';
